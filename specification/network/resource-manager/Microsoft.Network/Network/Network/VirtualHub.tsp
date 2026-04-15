@@ -104,7 +104,7 @@ interface VirtualHubs {
   get is ArmResourceRead<VirtualHub, Error = CloudError>;
 
   /**
-   * Creates a VirtualHub resource if it doesn't exist else updates the existing VirtualHub.
+   * Creates a VirtualHub resource if it doesn't exist or else updates the existing VirtualHub.
    */
   @autoRoute
   createOrUpdate is ArmResourceCreateOrReplaceAsync<
